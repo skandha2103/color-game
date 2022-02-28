@@ -1,0 +1,50 @@
+.square {
+  height: 200px;
+  width: 200px;
+  border: solid black 1px;
+}
+
+.green {
+  border-color:green;
+}
+
+.green:active,
+.green.active {
+  background-color: green;
+}
+
+.blue {
+  border-color: blue;
+}
+
+.blue:active,
+.blue.active {
+  background-color: blue;
+}
+
+.red {
+  border-color: red;
+}
+
+.red:active,
+.red.active {
+  background-color: red;
+}
+
+.yellow {
+  border-color: yellow;
+}
+
+.yellow:active,
+.yellow.active {
+  background-color: yellow;
+}
+
+.pink {
+  border-color: pink;
+}
+
+.pink:active,
+.pink.active {
+  background-color: pink;
+}

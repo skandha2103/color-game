@@ -1,0 +1,14 @@
+<h1 appClickColor style="text-align: center;">
+    Welcome {{ name | welcomepipe}}
+</h1>
+<form (ngSubmit)="onSubmit()">
+    <div class="input-group">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Please enter Name..." (ngModelChange)="onNameChange()" [(ngModel)]="name" #usrname="ngModel" required>
+        <button id="add_button" type="submit" style="border-width:0px;" class="input-group-addon btn-outline-secondary addBtn" [disabled]="!usrname.valid">
+            Start Game
+        </button>
+    </div>
+    <!-- <span *ngIf="usrname.errors?.required">
+        Name is required.
+    </span> -->
+</form>

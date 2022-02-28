@@ -1,0 +1,19 @@
+<div class="col">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Sno.</th>
+                <th>Name</th>
+                <th>Scores</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor='let scr of scoresData; index as i'>
+                <td>{{i+1}}</td>
+                <td>{{scr.name}}</td>
+                <td>{{scr.score}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

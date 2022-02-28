@@ -1,0 +1,13 @@
+<app-add-name (gameStart)="onGameStart($event)" (username)="getUserName($event)"></app-add-name>
+<div id="container" style="display: flex;">
+    <!-- <app-game-button *ngFor="let id of colors"  [active]="activeId===id" color="red" (colorClicked)="onColorClick($event)" id="{{id}}" [gs]="gamesStarted"></app-game-button> -->
+    <app-game-button [active]="colors.red" color="red" (colorClicked)="onColorClick($event)"></app-game-button>
+    <app-game-button [active]="colors.blue" color="blue" (colorClicked)="onColorClick($event)"></app-game-button>
+    <app-game-button [active]="colors.green" color="green" (colorClicked)="onColorClick($event)"></app-game-button>
+    <app-game-button [active]="colors.pink" color="pink" (colorClicked)="onColorClick($event)"></app-game-button>
+    <app-game-button [active]="colors.yellow" color="yellow" (colorClicked)="onColorClick($event)"></app-game-button>
+</div>
+<app-current-score></app-current-score>
+<!-- <div id="life">
+    <label>Life: </label>{{ life }}
+</div> -->
